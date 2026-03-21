@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.androidwidget"
     },
     "web": {
       "output": "static",
@@ -38,7 +39,28 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "Affirmation",
+              "label": "Affirmation Widget",
+              "minWidth": "180dp",
+              "minHeight": "100dp",
+              "targetCellWidth": 3,
+              "targetCellHeight": 2,
+              "description": "Daily affirmation widget",
+              "previewImage": "./assets/images/widget.png",
+              "updatePeriodMillis": 3600000,
+              "resizeMode": "horizontal|vertical",
+              "widgetFeatures": "reconfigurable"
+            }
+          ]
+        }
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true,
