@@ -28,7 +28,7 @@ function getAffirmation() {
   const lastUpdate = Number(Storage.getItemSync(LAST_UPDATE_KEY) || 0);
   const stored = Storage.getItemSync(CURRENT_AFFIRMATION_KEY);
 
-  if (stored && now - lastUpdate < 300000) {
+  if (stored && now - lastUpdate < 1800000) {
     return stored;
   }
 
