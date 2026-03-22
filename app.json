@@ -53,7 +53,7 @@
               "targetCellHeight": 2,
               "description": "Daily affirmation widget",
               "previewImage": "./assets/images/widget.png",
-              "updatePeriodMillis": 3600000,
+              "updatePeriodMillis": 1800000,
               "resizeMode": "horizontal|vertical",
               "widgetFeatures": "reconfigurable"
             }

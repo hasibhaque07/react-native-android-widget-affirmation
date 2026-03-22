@@ -2,8 +2,8 @@ import Storage from "expo-sqlite/kv-store";
 import React from "react";
 import { Linking } from "react-native";
 import type {
-    ColorProp,
-    WidgetTaskHandlerProps,
+  ColorProp,
+  WidgetTaskHandlerProps,
 } from "react-native-android-widget";
 
 import { AFFIRMATIONS } from "../data/AffirmationsData";
@@ -28,7 +28,7 @@ function getAffirmation() {
   const lastUpdate = Number(Storage.getItemSync(LAST_UPDATE_KEY) || 0);
   const stored = Storage.getItemSync(CURRENT_AFFIRMATION_KEY);
 
-  if (stored && now - lastUpdate < 3600000) {
+  if (stored && now - lastUpdate < 1800000) {
     return stored;
   }
 
